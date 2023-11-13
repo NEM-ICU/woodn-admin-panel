@@ -16,6 +16,7 @@ import NewUser from "./pages/NewUser";
 import ProductList from "./pages/ProductList";
 import Product from "./pages/Product";
 import CreateProduct from "./pages/CreateProduct";
+import Login from "./pages/Login";
 
 const Container = styled.div`
   display: flex;
@@ -34,6 +35,7 @@ const App = () => {
           <Route path="/product/:productId" element={<Product />} />
           <Route path="/product/create-product" element={<CreateProduct />} />
         </Route>
+        <Route path="/login" element={<Login />} />
       </>
     )
   );
